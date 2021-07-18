@@ -1,11 +1,11 @@
-/* body {
-  background-color: rgb(50 80 133);
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; 
-}  */
-
 body {
-  background-image: linear-gradient(to right, #6fc3f7, #1813a2);
+  background-color: rgb(50 80 133);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+
+/* body {
+  background-image: linear-gradient(to right, #6fc3f7, #1813a2);
+} */
 nav {
   z-index: 2;
 }
@@ -63,9 +63,9 @@ nav:hover {
   display: block;
 }
 .dropdown-item:hover {
-  background-image: linear-gradient(to bottom right, #ff00e0, #0b83fffa);
+  background-image: linear-gradient(to top right, #439efc, #c41a91, #ffe950);
   color: white;
-  filter: drop-shadow(2px 4px 6px black);
+  /* filter: drop-shadow(2px 2px 2px black); */
 }
 
 .border-nav {
@@ -87,16 +87,8 @@ nav:hover {
 }
 .carousel-img {
   max-height: 670px;
-  filter: brightness(0.9);
-}
-.carousel-images:hover {
-  filter: brightness(0.7);
-}
-.carousel-images:hover .slide-text-left {
-  margin-left: 124px;
-}
-.carousel-images:hover .slide-text-right {
-  margin-left: -760px;
+  filter: brightness(0.8);
+  height: 100%;
 }
 .carousel-control-prev,
 .carousel-control-next {
@@ -124,16 +116,19 @@ nav:hover {
   background: none;
 }
 .slide-text-left {
-  width: 326px;
-  margin-right: auto;
-  margin-bottom: 194px;
+  width: 20vw;
+  height: 63%;
   letter-spacing: 3px;
 }
 .slide-text-right {
-  height: 423px;
-  width: 609px;
-  left: 850px;
+  height: 64%;
+  width: 24vw;
+  position: absolute;
   letter-spacing: 3px;
+  left: auto;
+}
+.pb-inherit {
+  padding-bottom: inherit;
 }
 #carousel-small-screen {
   display: none;
@@ -152,6 +147,7 @@ nav:hover {
   }
   .carousel-img {
     max-height: 365px;
+    height: 100%;
   }
   .carousel-control-prev,
   .carousel-control-next {
@@ -167,7 +163,6 @@ nav:hover {
   width: auto;
   border-radius: 5px;
   border: 2px solid #db0383;
-  filter: drop-shadow(2px 4px 6px black);
 }
 #nosotros {
   display: flex;
@@ -293,8 +288,8 @@ nav:hover {
 }
 
 .btn:hover {
-  background-color: rgb(29, 26, 26);
   color: #fff;
+  background-image: linear-gradient(to top, #ff00e0, transparent);
   transition: transform var(--d) var(--e), opacity var(--d) var(--e);
 }
 
@@ -343,16 +338,17 @@ nav:hover {
 .customer-logos {
   background-color: #fff;
   margin-top: 50px;
-  height: 150px;
+  height: 131px;
 }
 
 #la-floreria-logo {
-  width: 283px;
-  height: 178px;
+  width: 188px;
+  height: 177px;
+  padding-bottom: 28px;
 }
 /* Slider */
 .slick-slide {
-  margin: 0px 20px;
+  margin: 0px 10px;
 }
 
 .slick-slide img {
@@ -433,8 +429,8 @@ nav:hover {
 }
 .slick-slide img {
   display: block;
-  width: 224px;
-  height: 145px;
+  width: 122px;
+  height: 119px;
   padding: 10px 0;
 }
 .slick-slide.slick-loading img {
