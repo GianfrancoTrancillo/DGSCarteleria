@@ -28,6 +28,8 @@
 
 <body>
   <div class="container text-center m-0 p-0 max-width">
+    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+    <div class="elfsight-app-f80e665a-3251-430f-ae69-93fcdc09e32b"></div>
     <nav class="navbar navbar-expand-lg navbar-dark bg-none p-0 nav-height position-sticky top-0">
       <div id="main-nav" class="container-fluid">
         <button class="navbar-toggler ps-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
@@ -48,7 +50,7 @@
                 data-bs-toggle="dropdown" aria-expanded="false">
                 Trabajos
               </a>
-              <ul id="dropdown-servicios" class="dropdown-menu">
+              <ul id="dropdown-servicios" class="dropdown-menu mt-0 border-0">
                 <li><a class="dropdown-item" href="#">Vidrieras Comerciales</a></li>
                 <li><a class="dropdown-item" href="#">Luminosos</a></li>
                 <li><a class="dropdown-item" href="#">Vinilos</a></li>
@@ -103,7 +105,8 @@
         <div class="carousel-item">
           <div class="row-lg d-flex">
             <div class="col-lg p-0 carousel-images">
-              <img src="./img/planificacion_contenidos.jpg" class="w-100 carousel-img img-fluid" alt="planificacion contenidos">
+              <img src="./img/planificacion_contenidos.jpg" class="w-100 carousel-img img-fluid"
+                alt="planificacion contenidos">
               <div class="carousel-caption d-none d-md-block text-center slide-text-left">
                 <h2 class="pb-inherit">HACEMOS TU PLAN REALIDAD</h2>
                 <a href="/contacto" data-bs-toggle="button" class="btn btn-carousel m-1">Contactar</a>
@@ -165,13 +168,26 @@
 
         <div class="carousel-item">
           <div class="p-0 carousel-images">
-            <img src="./img/brisas del lago.jpg" class="w-100 carousel-img img-fluid" alt="foto brisas del lago">
-            <div class="carousel-caption d-md-block text-center slide-text mb-5">
-              <h2>TECNOLOGÍA DE AVANZADA</h2>
+            <img src="./img/maquinaria.jpg" class="w-100 carousel-img img-fluid" alt="foto maquina imprentas">
+            <div class="carousel-caption d-md-block text-center slide-text">
+              <h2 class="pb-inherit">TECNOLOGÍA DE AVANZADA</h2>
               <a href="/contacto" data-bs-toggle="button" class="btn btn-carousel m-1">Contactar</a>
             </div>
           </div>
         </div>
+
+        <div class="carousel-item">
+          <div class="p-0 carousel-images">
+            <img src="./img/planificacion_contenidos.jpg" class="w-100 carousel-img img-fluid"
+              alt="planificacion contenidos">
+            <div class="carousel-caption d-md-block text-center slide-text">
+              <h2 class="pb-inherit">HACEMOS TU PLAN REALIDAD</h2>
+              <a href="/contacto" data-bs-toggle="button" class="btn btn-carousel m-1">Contactar</a>
+            </div>
+          </div>
+        </div>
+
+
       </div>
       <button class="carousel-control-prev bg-none border-0" type="button" data-bs-target="#carousel-small-screen"
         data-bs-slide="prev">
@@ -192,9 +208,10 @@
       <div class="row">
         <div id="nosotros" class="col-md">
           <h1>NOSOTROS</h1>
-          <p id="nosotros-p">Somos una empresa de producción, instalación y diseño de todo tipo de cartelería. Nuestros
-            equipos de última generación nos permiten brindar soluciones innovadoras logrando alta calidad de resolución
-            y durabilidad</p>
+          <p id="nosotros-p">Somos una empresa ubicada en la zona este del país, enfocada en brindar soluciones
+            integrales de comunicación visual.
+            La fabricación propia, la búsqueda de innovación y mejora continua, son los pilares fundamentales para hacer
+            posible su proyecto; agregando valor a su empresa, ofreciendo calidad y un excelente respaldo post venta</p>
           <button class="btn btn-carousel w-50" data-bs-toggle="button">Pedí asesoramiento aqui!</button>
         </div>
         <div id="camioneta img-fluid" class="col-md">
@@ -252,6 +269,35 @@
     </div>
     <!-- termina trabajos -->
 
+    
+    
+    <div id="info-nosotros" class="container-fluid bg-white mt-100">
+      <div class="row">
+        
+        <div class="col">
+          <img src="img/delivery-01.png" alt="Envios a todo el país" />
+          <h3>Envios a todo el país</h3>
+          <p>Para tu comodidad contamos con un servicio de envío a todo el país.</p>
+        </div>
+        
+        <div class="col">
+          <img src="img/compromiso-02.png" alt="Envios a todo el país" />
+          <h3>Compromiso</h3>
+          <p>Los objetivos de su empresa, son nuestra prioridad.</p>
+        </div>
+        
+        <div class="col">
+          <img src="img/calidad-03.png" alt="Envios a todo el país" />
+          <h3>Calidad</h3>
+          <p>Nos posicionamos en el mercado con productos y servicios de excelencia.</p>
+        </div>
+        
+      </div>
+    </div>
+    
+    
+    
+
     <div>
       <h2 id="clientes" class="text-white">Clientes</h2>
       <div class="customer-logos d-flex">
@@ -267,34 +313,33 @@
       </div>
     </div>
     <!-- termina clientes -->
-
-
+    
     <div id="contacto" class="container pt-4">
       <div class="row bg-white mt-5">
         <div class="col-lg mt-2">
-
+          
           <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content border-0">
-
+              
               <h5 class="modal-title p-0">Contacto</h5>
               <hr>
               <!-- <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
                 ></button> -->
-
-              <div class="modal-body">
-                <form action="https://formspree.io/" method="post">
-                  <div class="mb-3 mt-2">
-                    <label for="name" class="form-label">Nombre *</label>
-                    <input type="text" name="name" value="" class="form-control"
+                
+                <div class="modal-body">
+                  <form action="https://formspree.io/" method="post">
+                    <div class="mb-3 mt-2">
+                      <label for="name" class="form-label">Nombre *</label>
+                      <input type="text" name="name" value="" class="form-control"
                       placeholder="Ingresar nombre completo..." />
-                  </div>
-                  <div class="mb-3">
-                    <label for="email" class="form-label">Email *</label>
-                    <input type="email" name="_replyto" value="" class="form-control" placeholder="Ingresar Email..." />
+                    </div>
+                    <div class="mb-3">
+                      <label for="email" class="form-label">Email *</label>
+                      <input type="email" name="_replyto" value="" class="form-control" placeholder="Ingresar Email..." />
                   </div>
                   <div class="mb-3">
                     <label for="message" class="form-label">Asunto</label>
@@ -317,17 +362,40 @@
         </div>
 
 
-        <div id="info" class="col-lg-4">
+        <div id="info" class="col-lg-6">
 
           <h5>Información</h5>
           <hr>
 
 
           <p>DGS Cartelería <br>
-            Por cualquier consulta complete el formulario o pongasé en contacto. <br>
-            Telefono:+598 099 99 99 <br>
-            Email: info@dgscarteleria.com.uy
+            Por cualquier consulta complete el formulario o póngase en contacto. <br>
+            Teléfono:+598 099 99 99 <br>
+            Email: info@dgscarteleria.com.uy <br>
+            Horario de atención: Lunes a Viernes de 10 a 18 horas
           </p>
+          <div class="mapouter map"> 
+            <div class="gmap_canvas"><iframe width="580" height="460" id="gmap_canvas"
+              src="https://maps.google.com/maps?q=maldonado,%20Agustin%20Velazquez,%20esquina%20elias%20chiossi&t=&z=13&ie=UTF8&iwloc=&output=embed"
+              frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+              href="https://soap2day-to.com"></a><br>
+              <style>
+                .mapouter {
+                  position: relative;
+                  text-align: right;
+                  height: 500px;
+                }
+                </style><a href="https://www.embedgooglemap.net"></a>
+              <style>
+                .gmap_canvas {
+                  overflow: hidden;
+                  background: none !important;
+                  height: 500px;
+                  width: 600px;
+                }
+                </style>
+            </div>
+          </div>
         </div>
       </div>
       <!-- termina contacto -->
