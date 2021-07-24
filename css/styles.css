@@ -140,60 +140,7 @@ nav:hover {
   display: none;
 }
 /* termina big-screen carousel */
-@media (max-width: 600px) {
-  #carousel-big-screen {
-    display: none;
-  }
-  #carousel-small-screen {
-    display: block;
-    height: 300px;
-  }
-  #carousel-main {
-    height: max-content;
-  }
-  .carousel-images {
-    height: 365px;
-  }
-  
-  .carousel-control-prev,
-  .carousel-control-next {
-    width: unset;
-    height: unset;
-    top: unset;
-  }
-  #bienvenidos {
-    margin: 26px 30px;
-  }
-  #nosotros {
-    margin: 50px 0;
-  }
-  #nosotros-p {
-    padding: 5vw;
-    margin: auto;
-  }
-  #logo {
-    width: 127px;
-  }
-  .fb-inst {
-    padding: 0;
-    border: none;
-  }
-  #logo {
-    border: none;
-  }
-  #logo-img {
-    padding-right: 11px;
-  }
-  #main-nav {
-    padding-left: 10px;
-    padding-right: 12px;
-    background-color: #325085;
-  }
-  .nav-dropdown {
-    border: none;
-    letter-spacing: 1px;
-  }
-}
+
 /* termina carousel */
 
 #bienvenidos {
@@ -524,12 +471,84 @@ label {
   place-content: baseline;
 }
 
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: inherit;
+  width: inherit;
+}
+.mapouter {
+  position: relative;
+  text-align: right;
+  height: 500px;
+}
+
 /* termina contacto */
 
 #footer {
   height: 10vh;
   color: white;
   align-items: center;
+}
+
+
+@media (max-width: 600px) {
+  #carousel-big-screen {
+    display: none;
+  }
+  #carousel-small-screen {
+    display: block;
+    height: 300px;
+  }
+  #carousel-main {
+    height: max-content;
+  }
+  .carousel-images {
+    height: 365px;
+  }
+  
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: unset;
+    height: unset;
+    top: unset;
+  }
+  #bienvenidos {
+    margin: 26px 30px;
+  }
+  #nosotros {
+    margin: 50px 0;
+  }
+  #nosotros-p {
+    padding: 5vw;
+    margin: auto;
+  }
+  #logo {
+    width: 127px;
+  }
+  .fb-inst {
+    padding: 0;
+    border: none;
+  }
+  #logo {
+    border: none;
+  }
+  #logo-img {
+    padding-right: 11px;
+  }
+  #main-nav {
+    padding-left: 10px;
+    padding-right: 12px;
+    background-color: #325085;
+  }
+  .nav-dropdown {
+    border: none;
+    letter-spacing: 1px;
+  }
+
+  #sm-screen-wp {
+    display: none;
+  }
 }
 
 @media (min-width: 600px) {
