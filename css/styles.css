@@ -486,6 +486,11 @@ label {
   height: 500px;
 }
 
+#btn-contacto {
+  margin: auto;
+  width: 20%;
+}
+
 /* termina contacto */
 
 #footer {
@@ -551,6 +556,8 @@ label {
   .page-content {
     margin: 0;
   }
+
+  
 
   #sm-screen-wp {
     display: none;
