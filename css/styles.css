@@ -112,7 +112,7 @@ nav:hover {
   border-radius: 20px;
   filter: drop-shadow(1px 2px 3px black);
 }
-.hr {
+#hr {
   color: rgb(1 167 231);
   height: 3px !important;
   margin-top: 91px;
@@ -277,11 +277,6 @@ nav:hover {
   color: #fff;
   background-image: linear-gradient(to top, #ff00e0, transparent);
   transition: transform var(--d) var(--e), opacity var(--d) var(--e);
-}
-
-.btn:focus {
-  outline: 1px dashed yellow;
-  outline-offset: 3px;
 }
 
 .content {
@@ -468,6 +463,7 @@ nav:hover {
 }
 #info p {
   margin-top: 40px;
+  line-height: 29px;
 }
 label {
   display: grid;
@@ -514,6 +510,9 @@ label {
   .carousel-images {
     height: 365px;
   }
+  .carousel-caption {
+    padding-bottom: 3.25rem;
+  }
   
   .carousel-control-prev,
   .carousel-control-next {
@@ -553,15 +552,45 @@ label {
     border: none;
     letter-spacing: 1px;
   }
+
+  #mt-clientes {
+    margin-top: 315px;
+  }
   .page-content {
     margin: 0;
   }
 
-  
+  iframe {
+    padding-top: 62px;
+    width: 300px;
+    height: 400px;
+  }
+
+  .container-gallery {
+    height: 54vh !important;
+  }
+  .box-gallery {
+    box-shadow: none !important;
+    height: 88vh;
+  }
+  .box-gallery > img {
+    height: calc(70% - 10vh) !important;
+  }
+  .box-gallery:visited { flex: 20 1 50% !important; }
+  .box-gallery:visited > img {
+  height: 70% !important;
+}
 
   #sm-screen-wp {
     display: none;
   }
+  .dpvbQR, .geFClS {
+    height: 50px !important;
+    width: 50px !important;
+    margin-right: 7px !important;
+    margin-bottom: 30px !important;
+  }
+
 }
 
 @media (min-width: 600px) {
@@ -586,4 +615,41 @@ label {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
+/* galeria de fotos big-screen */
+
+.titulo {
+  margin-top: 2vh;
+}
+.container-gallery {
+  display: flex;
+  width: 100%;
+  padding: 4% 2%;
+  box-sizing: border-box;
+  height: 100vh;
+}
+
+.box-gallery {
+  flex: 1;
+  overflow: hidden;
+  transition: .5s;
+  margin: 0 2%;
+  box-shadow: 0 20px 30px rgba(0,0,0,.1);
+  line-height: 0;
+}
+
+.box-gallery > img {
+  width: 200%;
+  height: calc(100% - 10vh);
+  object-fit: cover; 
+  transition: .5s;
+}
+
+
+.box-gallery:hover { flex: 1 1 50%; }
+.box-gallery:hover > img {
+  width: 100%;
+  height: 100%;
+}
+
 
