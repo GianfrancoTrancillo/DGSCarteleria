@@ -41,6 +41,9 @@ nav:hover {
   border-bottom: 1px solid;
   padding-top: 10px;
 }
+.bg-screen-trabajos {
+  display: none;
+}
 .dropdown {
   position: relative;
   display: inline-block;
@@ -162,7 +165,7 @@ nav:hover {
   line-height: 22px;
 }
 #camioneta-img {
-  max-width: inherit;
+  max-width: -webkit-fill-available;
   border-radius: 2px;
 }
 
@@ -200,6 +203,7 @@ nav:hover {
   background-position: 0 0;
   transition: transform calc(var(--d) * 1.5) var(--e);
   pointer-events: none;
+  filter: brightness(0.6);
 }
 .card:after {
   content: "";
@@ -279,7 +283,7 @@ nav:hover {
   transition: transform var(--d) var(--e), opacity var(--d) var(--e);
 }
 
-.content {
+/* .content {
   transform: translateY(calc(100% - 4.5rem));
 }
 
@@ -309,7 +313,10 @@ nav:hover {
   opacity: 1;
   transform: translateY(0);
   transition-delay: calc(var(--d) / 8);
-}
+} */
+
+
+
 /* termina servicios */
 
 .mt-100 {
@@ -481,12 +488,6 @@ label {
   text-align: right;
   height: 500px;
 }
-
-#btn-contacto {
-  margin: auto;
-  width: 20%;
-}
-
 /* termina contacto */
 
 #footer {
@@ -497,6 +498,18 @@ label {
 
 
 @media (max-width: 600px) {
+  p {
+    font-size: 12px;
+  }
+  .btn {
+    font-size: 9.5px;
+  }
+  .dropdown-menu a {
+    padding: 8px 16px;
+  }
+  .bg-screen-trabajos {
+    display: none;
+  }
   #carousel-big-screen {
     display: none;
   }
@@ -553,6 +566,13 @@ label {
     letter-spacing: 1px;
   }
 
+  #contacto {
+    font-size: 12px;
+  }
+  .form-control {
+    font-size: inherit;
+  }
+
   #mt-clientes {
     margin-top: 315px;
   }
@@ -606,13 +626,19 @@ label {
     margin: 100px;
   }
   #nosotros {
-    margin: 100px 0;
+    margin: 25px 0;
   }
   
 }
-@media (min-width: 900px) {
+@media (min-width: 1100px) {
   .page-content {
     grid-template-columns: repeat(3, 1fr);
+  }
+  .bg-screen-trabajos {
+    display: block;
+  }
+  .sm-screen-trabajos {
+    display: none;
   }
 }
 

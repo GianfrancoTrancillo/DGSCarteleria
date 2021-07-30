@@ -1,3 +1,11 @@
+if (!window.Cypress) AOS.init({
+    useClassNames: true,
+    initClassName: false,
+    animatedClassName: 'animated',
+  });
+
+
+
 $(document).ready(function(){
     $('.customer-logos').slick({
         slidesToShow: 4,
@@ -20,5 +28,7 @@ $(document).ready(function(){
         }]
     });
 });
+
+
 
 
