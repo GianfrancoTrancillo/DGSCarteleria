@@ -9,8 +9,12 @@ body {
 nav {
   z-index: 2;
 }
-h2, h3 {
+h2,
+h3 {
   font-family: "Poppins", sans-serif;
+}
+h1 {
+  margin-bottom: 2rem;
 }
 nav:hover {
   background-color: #162d56;
@@ -41,7 +45,7 @@ nav:hover {
   border-bottom: 1px solid;
   padding-top: 10px;
 }
-.bg-screen-trabajos {
+#bg-screen-trabajos {
   display: none;
 }
 .dropdown {
@@ -157,7 +161,7 @@ nav:hover {
 #nosotros {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 }
 .nosotros-p {
@@ -222,23 +226,47 @@ nav:hover {
 }
 
 .card:nth-child(2):before {
-  background-image: url(../img/fachada.jpg);
+  background-image: url(../img/estampados/estampados\ ppal.jpg);
 }
 
 .card:nth-child(3):before {
-  background-image: url(../img/vehicular.jpg);
+  background-image: url(../img/vehicular/ppal.jpg);
 }
 
 .card:nth-child(4):before {
-  background-image: url(../img/verduleria.jpg);
+  background-image: url(../img/marquesinas/ppal.jpg);
 }
 
 .card:nth-child(5):before {
-  background-image: url(../img/vinilos.jpg);
+  background-image: url(../img/lonas/lonas.jpg);
 }
 
 .card:nth-child(6):before {
-  background-image: url(../img/maxima.jpg);
+  background-image: url(../img/vidrierasComerciales/ppal.jpg);
+}
+
+.card:nth-child(7):before {
+  background-image: url(../img/esmerilados/esmerilado\ ppal.PNG);
+}
+
+.card:nth-child(8):before {
+  background-image: url(../img/troquelados/ppal.jpg);
+}
+
+.card:nth-child(9):before {
+  background-image: url(../img/microperforados/ppal.jpg);
+}
+
+.card:nth-child(10):before {
+  background-image: url(../img/corporeo.jpg);
+}
+
+.card:nth-child(11):before {
+  background-image: url(../img/imantados/ppal.jpg);
+}
+
+.card:nth-child(12):before {
+  background-image: url(../img/otros/ppal.jpg);
 }
 
 .content {
@@ -315,8 +343,6 @@ nav:hover {
   transition-delay: calc(var(--d) / 8);
 } */
 
-
-
 /* termina servicios */
 
 .mt-100 {
@@ -324,8 +350,8 @@ nav:hover {
 }
 #info-nosotros {
   height: 40vh;
-    display: grid;
-    align-items: center;
+  display: grid;
+  align-items: center;
 }
 .map {
   margin-left: auto;
@@ -333,7 +359,6 @@ nav:hover {
   display: grid;
   place-content: center;
 }
-
 
 #clientes {
   margin-top: 100px;
@@ -461,7 +486,6 @@ nav:hover {
 }
 /* termina clientes */
 
-
 #contacto {
   max-width: 100%;
 }
@@ -496,7 +520,6 @@ label {
   align-items: center;
 }
 
-
 @media (max-width: 600px) {
   p {
     font-size: 12px;
@@ -526,7 +549,7 @@ label {
   .carousel-caption {
     padding-bottom: 3.25rem;
   }
-  
+
   .carousel-control-prev,
   .carousel-control-next {
     width: unset;
@@ -596,21 +619,23 @@ label {
   .box-gallery > img {
     height: calc(70% - 10vh) !important;
   }
-  .box-gallery:visited { flex: 20 1 50% !important; }
+  .box-gallery:visited {
+    flex: 20 1 50% !important;
+  }
   .box-gallery:visited > img {
-  height: 70% !important;
-}
+    height: 70% !important;
+  }
 
   #sm-screen-wp {
     display: none;
   }
-  .dpvbQR, .geFClS {
+  .dpvbQR,
+  .geFClS {
     height: 50px !important;
     width: 50px !important;
     margin-right: 7px !important;
     margin-bottom: 30px !important;
   }
-
 }
 
 @media (min-width: 600px) {
@@ -628,25 +653,26 @@ label {
   #nosotros {
     margin: 25px 0;
   }
-  
+  .titulo {
+    margin-top: 5vh;
+  }
 }
-@media (min-width: 1100px) {
+@media (min-width: 1000px) {
   .page-content {
     grid-template-columns: repeat(3, 1fr);
   }
-  .bg-screen-trabajos {
+  #bg-screen-trabajos {
     display: block;
   }
   .sm-screen-trabajos {
     display: none;
   }
+  
 }
 
 /* galeria de fotos big-screen */
 
-.titulo {
-  margin-top: 2vh;
-}
+
 .container-gallery {
   display: flex;
   width: 100%;
@@ -658,24 +684,23 @@ label {
 .box-gallery {
   flex: 1;
   overflow: hidden;
-  transition: .5s;
+  transition: 0.5s;
   margin: 0 2%;
-  box-shadow: 0 20px 30px rgba(0,0,0,.1);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
   line-height: 0;
 }
 
 .box-gallery > img {
   width: 200%;
   height: calc(100% - 10vh);
-  object-fit: cover; 
-  transition: .5s;
+  object-fit: cover;
+  transition: 0.5s;
 }
 
-
-.box-gallery:hover { flex: 1 1 50%; }
+.box-gallery:hover {
+  flex: 1 1 50%;
+}
 .box-gallery:hover > img {
   width: 100%;
   height: 100%;
 }
-
-

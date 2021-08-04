@@ -90,7 +90,7 @@
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="#hr">Nosotros</a>
             </li>
-            <li class="nav-item dropdown bg-screen-trabajos">
+            <li id="bg-screen-trabajos" class="nav-item dropdown">
               <a class="nav-link" href="./trabajos/trabajos.html">
                 Trabajos
               </a>
@@ -134,9 +134,9 @@
           </ul>
         </div>
         <div class="col-md-2 text-end fb-inst border-nav nav-height pt-4">
-          <a href="https://www.instagram.com/dgscarteleria_vinilos/"><i
+          <a href="https://www.instagram.com/dgscarteleria_vinilos/" target="_blank"><i
               class="fab fa-instagram fs-3 text-white pe-1"></i></a>
-          <a href="https://www.facebook.com/dgscarteleria/"><i class="fab fa-facebook-square fs-3 text-white"></i></a>
+          <a href="https://www.facebook.com/dgscarteleria/" target="_blank"><i class="fab fa-facebook-square fs-3 text-white"></i></a>
         </div>
       </div>
     </nav>
@@ -368,6 +368,13 @@
 
       <div class="card">
         <div class="content" data-aos="fade-up" data-aos-duration="2500">
+          <h2 class="tittle">Imantados</h2>
+          <a href="./trabajos/imantados.html" class="btn">Ver más</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="content" data-aos="fade-up" data-aos-duration="2500">
           <h2 class="tittle">Otros</h2>
           <a href="./trabajos/otros.html" class="btn">Ver más</a>
         </div>
@@ -433,7 +440,7 @@
               <hr>
 
               <div class="modal-body">
-                <form action="https://formspree.io/" method="post">
+                <form action="https://formspree.io/f/mjvjaayn" method="POST">
                   <div class="mb-3 mt-2">
                     <label for="name" class="form-label">Nombre *</label>
                     <input type="text" name="name" value="" class="form-control"
@@ -441,23 +448,23 @@
                   </div>
                   <div class="mb-3">
                     <label for="email" class="form-label">Email *</label>
-                    <input type="email" name="_replyto" value="" class="form-control" placeholder="Ingresar Email..." />
+                    <input type="email" name="_replyto" class="form-control" placeholder="Ingresar Email..." />
                   </div>
-                  <div class="mb-3">
+                  <!-- <div class="mb-3">
                     <label for="message" class="form-label">Asunto</label>
                     <input type="text" value="" class="form-control" placeholder="Ingresar asunto..."></textarea>
-                  </div>
+                  </div> -->
                   <div class="mb-3">
                     <label for="message" class="form-label">Mensaje *</label>
                     <textarea name="message" rows="8" cols="40" class="form-control"
                       placeholder="Ingresar mensaje..."></textarea>
                   </div>
+                  <div class="modal-footer justify-content-center">
+                    <button type="submit" class="btn">
+                      Enviar
+                    </button>
+                  </div>
                 </form>
-              </div>
-              <div class="modal-footer justify-content-center">
-                <button type="submit" class="btn">
-                  Enviar
-                </button>
               </div>
             </div>
           </div>
@@ -509,32 +516,31 @@
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-              <form action="https://formspree.io/" method="post">
-                <div class="mb-3">
-                  <label for="name" class="form-label">Nombre *
-                  </label>
+              <form action="https://formspree.io/f/mjvjaayn" method="POST">
+                <div class="mb-3 mt-2">
+                  <label for="name" class="form-label">Nombre *</label>
                   <input type="text" name="name" value="" class="form-control"
                     placeholder="Ingresar nombre completo..." />
                 </div>
                 <div class="mb-3">
                   <label for="email" class="form-label">Email *</label>
-                  <input type="email" name="email" value="" class="form-control" placeholder="Ingresar Email..." />
+                  <input type="email" name="_replyto" class="form-control" placeholder="Ingresar Email..." />
                 </div>
-                <div class="mb-3">
+                <!-- <div class="mb-3">
                   <label for="message" class="form-label">Asunto</label>
                   <input type="text" value="" class="form-control" placeholder="Ingresar asunto..."></textarea>
-                </div>
+                </div> -->
                 <div class="mb-3">
                   <label for="message" class="form-label">Mensaje *</label>
                   <textarea name="message" rows="8" cols="40" class="form-control"
                     placeholder="Ingresar mensaje..."></textarea>
                 </div>
+                <div class="modal-footer justify-content-center">
+                  <button type="submit" class="btn">
+                    Enviar
+                  </button>
+                </div>
               </form>
-            </div>
-            <div class="modal-footer">
-              <button type="submit" class="btn m-auto" data-bs-dismiss="modal">
-                Enviar
-              </button>
             </div>
           </div>
         </div>
