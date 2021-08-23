@@ -672,7 +672,6 @@ label {
 
 /* galeria de fotos big-screen */
 
-
 .container-gallery {
   display: flex;
   width: 100%;
@@ -689,14 +688,12 @@ label {
   box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
   line-height: 0;
 }
-
 .box-gallery > img {
   width: 200%;
   height: calc(100% - 10vh);
   object-fit: cover;
   transition: 0.5s;
 }
-
 .box-gallery:hover {
   flex: 1 1 50%;
 }
