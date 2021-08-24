@@ -3,9 +3,6 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* body {
-  background-image: linear-gradient(to right, #6fc3f7, #1813a2);
-} */
 nav {
   z-index: 2;
 }
@@ -16,14 +13,18 @@ h3 {
 h1 {
   margin-bottom: 2rem;
 }
-nav:hover {
-  background-color: #162d56;
-  color: black;
-}
 .whatsapp {
   position: fixed;
   float: left;
 }
+
+/* EMPIEZA NAV */
+
+nav:hover {
+  background-color: #162d56;
+  color: black;
+}
+
 #logo {
   border-color: #439efc;
   padding-top: 10px;
@@ -77,7 +78,6 @@ nav:hover {
 .dropdown-item:hover {
   background-image: linear-gradient(to top right, #439efc, #c41a91, #ffe950);
   color: white;
-  /* filter: drop-shadow(2px 2px 2px black); */
 }
 
 .border-nav {
@@ -94,6 +94,10 @@ nav:hover {
 #main-nav {
   padding: 0;
 }
+
+/* TERMINA NAV */
+
+/* EMPIEZA CAROUSEL */
 #carousel-main {
   height: 670px;
 }
@@ -149,9 +153,10 @@ nav:hover {
 #carousel-small-screen {
   display: none;
 }
-/* termina big-screen carousel */
 
-/* termina carousel */
+/* TERMINA CAROUSEL */
+
+/* EMPIEZA NOSOTROS */
 
 #bienvenidos {
   width: auto;
@@ -173,7 +178,9 @@ nav:hover {
   border-radius: 2px;
 }
 
-/* termina nosotros */
+/* TERMINA NOSOTROS */
+
+/* EMPIEZA TRABAJOS */
 
 .page-content {
   display: grid;
@@ -311,39 +318,9 @@ nav:hover {
   transition: transform var(--d) var(--e), opacity var(--d) var(--e);
 }
 
-/* .content {
-  transform: translateY(calc(100% - 4.5rem));
-}
+/* TERMINA TRABAJOS */
 
-.content > * {
-  opacity: 0;
-  transform: translateY(1rem);
-  transition: transform var(--d) var(--e), opacity var(--d) var(--e);
-}
-
-.card:hover {
-  align-items: center;
-}
-
-.card:hover:before {
-  filter: brightness(0.3);
-}
-
-.card:hover:after {
-  transform: translateY(-50%);
-}
-
-.card:hover .content {
-  transform: translateY(0);
-}
-
-.card:hover .content > * {
-  opacity: 1;
-  transform: translateY(0);
-  transition-delay: calc(var(--d) / 8);
-} */
-
-/* termina servicios */
+/* EMPIEZA CLIENTES */
 
 .mt-100 {
   margin-top: 100px;
@@ -484,7 +461,10 @@ nav:hover {
 .slick-arrow.slick-hidden {
   display: none;
 }
-/* termina clientes */
+
+/* TERMINA CLIENTES */
+
+/* EMPIEZA CONTACTO */
 
 #contacto {
   max-width: 100%;
